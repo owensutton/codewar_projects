@@ -13,7 +13,7 @@ def unique_in_order(iterable):
             y = iterable[x]
             x += 1
 
-    print(z)
+    return(z)
 
 
 unique_in_order("hello")
