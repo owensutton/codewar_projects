@@ -1,11 +1,19 @@
 def unique_in_order(iterable):
     itlen = len(iterable)
-
-
     x = 0
+    y = ''
+    z = []
+
     while x < itlen:
-        print(iterable[x])
-        x += 1
+        if iterable[x] == y:
+            y = iterable[x]
+            x += 1
+        else:
+            z.append(iterable[x])
+            y = iterable[x]
+            x += 1
+
+    print(z)
 
 
 unique_in_order("hello")
